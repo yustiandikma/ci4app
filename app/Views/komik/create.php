@@ -6,6 +6,9 @@
     <div class="row">
         <div class="col-8">
             <h2 class="my-3">Form Tambah Data Komik</h2>
+
+            <?= $validation->listErrors(); ?>
+
             <form action="/komik/save" method="POST">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
